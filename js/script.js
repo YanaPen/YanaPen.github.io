@@ -2,7 +2,24 @@
   // niceScroll
   $("html").niceScroll();
     
-    
+     // Stick menu
+  $(".menu").sticky({topSpacing:0});
+
+var template_id = "template_lK8k2IpL";
+
+  myform.find("button").text("Sending...");
+  emailjs.sendForm(service_id,template_id,myform[0])
+  	.then(function(){ 
+    	alert("Sent!");
+       myform.find("button").text("Send");
+    }, function(err) {
+       alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+       myform.find("button").text("Send");
+    });
+  
+});
+
+
 
 
   // Menu Scroll to content and Active menu
