@@ -15,8 +15,8 @@ var template_id = "template_lK8k2IpL";
     }, function(err) {
        alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
        myform.find("button").text("Send");
-    return false;});
-  
+   
+   return false;
 });
 
 
